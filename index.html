@@ -2,10 +2,217 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Репетитор английского</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="src/index.js" defer></script>
 </head>
 <body>
-    
+  <header class="header">
+    <div class="header-inner container">
+      <a class="header-logo" href="/" aria-label="Home" title="Home">
+        😉
+      </a>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#about">Обо мне</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#teaching-approach">Занятия</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#services">Направления</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="header-contact-button contact-button button">Записаться на урок</button>
+        <button type="button" class="burger-menu-button button" aria-label="Открыть меню">
+          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path> 
+              <path d="M4 12L20 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path> 
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header-dropdown-menu"></div>
+  </header>
+    <main class="content">
+      <section class="hero section container">
+        <div class="hero-inner">
+          <div class="hero-inner-card">
+            <p class="hero-text">Hello there!</p>
+            <h1 class="hero-title">Меня зовут Лилия Мышева,<br> я <span>репетитор английского языка</span></h1>
+            <p class="hero-text">Помогу тебе освоить английский с удовольствием и без стресса. На моих уроках всегда уютная атмосфера, много практики и поддержки. Давай учить язык вместе — это будет интересно!</p>
+            <button type="button" class="hero-button contact-button button">Связаться</button>
+          </div>
+        </div>
+      </section>
+      <section class="about section container" id="about">
+        <h2 class="about-title"><span>Обо мне</span></h2>
+        <div class="about-inner">
+          <div class="about-img-container">
+            <img class="about-tutor-img" src="./src/assets/img/tutor-img.jpg">
+          </div>
+          <div class="about-inner-cards">
+            <div class="about-inner-card about-inner-card-main">
+              <h3 class="card-title">Приятно познакомиться!</h3>
+              <p>Я Лилия — преподаватель английского с 10 лет опыта. Помогаю заговорить свободно, преодолеть барьеры и достичь целей — от работы до путешествий. Уроки строю вокруг практики и ваших интересов.</p>
+            </div>
+            <div class="about-inner-cards-row">
+              <div class="about-inner-card">
+                <h3 class="card-title">Персональный подход</h3>
+                <p>Программа под ваш уровень и задачи. Разбираем то, что действительно полезно: от фильмов до бизнес-английского. Учу не только правилам, но и живому языку.</p>
+              </div>
+              <div class="about-inner-card">
+                <h3 class="card-title">Удобный формат</h3>
+                <p>40-60 минут продуктивных онлайн-занятий с интерактивными материалами. Готовлю к экзаменам, собеседованиям и повседневному общению. Все материалы остаются у вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="teaching-approach section container" id="teaching-approach">
+        <h2 class="teaching-approach-title"><span>Как проходят занятия?</span></h2>
+        <div class="teaching-approach-inner">
+          <div class="teaching-approach-inner-row">
+            <div class="teaching-approach-cards">
+              <div class="teaching-approach-card">
+                <h3 class="card-title">Длительность</h3>
+                <p>40–60 минут — оптимальное время для эффективного усвоения материала.</p>
+              </div>
+              <div class="teaching-approach-card">
+                <h3 class="card-title">Формат</h3>
+                <p>Занятия проводятся дистанционно через удобные платформы (Zoom, Skype и другие)</p>
+              </div>
+            </div>
+            <div class="teaching-approach-img-container">
+              <img class="teaching-approach-img" src="./src/assets/img/zoom-lesson.jpg" alt="Урок через Zoom">
+            </div>
+          </div>
+          <div class="teaching-approach-inner-row">
+            <div class="teaching-approach-card teaching-approach-inner-card-main">
+              <h3 class="card-title">Материалы</h3>
+              <p>Использую интерактивные презентации, видео, аудио и онлайн-упражнения для увлекательного обучения.</p>
+            </div>
+            <div class="teaching-approach-card">
+              <h3 class="card-title">Практика</h3>
+              <p>Уделяю внимание разговорной речи, чтобы вы могли уверенно использовать английский в реальной жизни.</p>
+            </div>
+            <div class="teaching-approach-card">
+              <h3 class="card-title">Обратная связь</h3>
+              <p>После каждого урока вы получаете обратную связь и рекомендации для дальнейшего прогресса.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services section container" id="services">
+        <h2 class="services-title"><span>Направления подготовки</span></h2>
+        <div class="services-list">
+          <div class="services-item">
+            <div class="card-header">
+              <h3>Подготовка к ОГЭ/ЕГЭ</h3>
+            </div>
+            <div class="card-body">
+              <p>Готовлю к ЕГЭ и ОГЭ по английскому с учетом всех требований и изменений. Индивидуальный подход, акцент на слабые места и регулярная практика тестов помогут уверенно сдать экзамены. Давай достигнем твоей цели вместе!</p>
+            </div>
+            <div class="card-comment">
+              <p>Пробное занятие бесплатно.</p>
+              <p>Длительность 60 мин.</p>
+              <p>Стоимость 1 занятия 2000 руб.</p>
+              <p>Абонемент на 8 занятий 14 000 руб.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="button contact-button">Записаться</button>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="card-header">
+              <h3>Разговорный английский</h3>
+            </div>
+            <div class="card-body">
+              <p>Хочешь заговорить на английском легко и уверенно? Приходи на занятия по разговорному английскому! Мы разберем реальные ситуации, улучшим произношение и избавимся от языкового барьера. Общение — это просто и интересно!</p>
+            </div>
+            <div class="card-comment">
+              <p>Пробное занятие бесплатно.</p>
+              <p>Длительность 60 мин.</p>
+              <p>Стоимость 1 занятия 2000 руб.</p>
+              <p>Абонемент на 8 занятий 14 000 руб.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="button contact-button">Записаться</button>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="card-header">
+              <h3>Профессиональный английский</h3>
+            </div>
+            <div class="card-body">
+              <p>Освой профессиональный английский для карьерного роста и уверенного общения в деловой среде. Программа включает бизнес-лексику, подготовку к переговорам, презентациям и ведению переписки. Подними свой уровень и открой новые возможности!</p>
+            </div>
+            <div class="card-comment">
+              <p>Пробное занятие бесплатно.</p>
+              <p>Длительность 60 мин.</p>
+              <p>Стоимость 1 занятия 2000 руб.</p>
+              <p>Абонемент на 8 занятий 14 000 руб.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="button contact-button">Записаться</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews section container" id="reviews">
+        <h2 class="reviews-title"><span>Отзывы</span></h2>
+          <p>Борис Юров: замечательно! Лучше всех!</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container section" id="contacts">
+      <div class="footer-inner">
+        <div class="footer-inner-body">
+          <div class="footer-inner-form">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name" class="visually-hidden">Имя</label>
+                <input type="text" id="name" name="name" required 
+                  placeholder="Введите ваше имя" minlength="2">
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact" class="visually-hidden">Контакты</label>
+                <input type="text" id="contact" name="contact" required
+                  placeholder="Телефон / Телеграм / Email">
+                <span class="error-message"></span>
+              </div>
+              
+              <button type="submit" class="submit-button button">Отправить</button>
+            </form>
+          </div>
+          <div class="footer-inner-text">
+            <p>Если у вас остались вопросы, заполните форму и я свяжусь с Вами.</p>
+            <p>Или вы можете самостоятельно связаться со мной в любом мессенджере.</p>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <div class="telegram-icon">
+            <img src="./src/assets/icons/telegram.svg" alt="telegram-icon" width="40" height="40">
+          </div>
+          <div class="whatsapp-icon">
+            <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp-icon" width="40" height="40">
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
